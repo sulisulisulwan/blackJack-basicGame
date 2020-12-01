@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Let's play BLACKJACK!</title>
+    </head>
+    <body>
+        <div id="title">
+            <h1>Let's play Blackjack!</h1>
+            <img height=70 width=55 src="blackjack.png">
+        </div>
+        <hr>
+        <div id ="play-area">
+            <div id="betting-area">
+                <div id="your-money">
+                    <div id="your-money-title"><h4>Your money:</h4></div>
+                    <span id="$">$</span><span id="money-amount"></span>
+                </div>
+                <div id="betting-counter">
+                    <label for="betAmount">Bet amount (minimum bet = $5):</label>
+                    <input type="number" id="betAmount" name="betAmount" min="5">
+                    <button type="button" id="submitBet">Bet!</button>
+                </div>
+            </div>
+            <hr>
+            <div id="hand1-title">
+                <p><h4>Your hand:</h4></p>
+            </div>
+            <div id="hand1-content"></div>
+            <div id="hand1Bet"></div>
+            
+            <div id="hand2-title"></div>
+            <div id="hand2-content"></div>
+            <div id="hand2Bet"></div>
+
+            <div id="hand3-title"></div>
+            <div id="hand3-content"></div>
+            <div id="hand3Bet"></div>
+
+            <div id="hand4-title"></div>
+            <div id="hand4-content"></div>
+            <div id="hand4Bet"></div>
+
+            <div id="dealer-hand-title">
+                <p><h4>Dealer's hand:</h4></p>
+            </div>
+            <div id ="dealer-hand-content"></div>
+        </div>
+        <br>
+        <hr>
+        <div id ="player-action-area">
+            <div id="Deal"></div>
+            <div id="player-choices">
+                <div id="player-chose"></div>
+                <div id="player-choices-textbox"></div>
+                <div id="hit-button"></div>
+                <div id="stay-button"></div>
+                <div id="double-down-button"></div>
+                <div id="split-button"></div>
+            </div>
+        </div>
+        <hr>
+        <div id ="your-running-total-title"><h4>Your total:</h4></div>
+            <div id="runningtotal-hand1-TITLE"></div>
+            <div id="your-running-total-hand1"></div>
+            <div id="runningtotal-hand2-TITLE"></div>
+            <div id="your-running-total-hand2"></div>
+            <div id="runningtotal-hand3-TITLE"></div>
+            <div id="your-running-total-hand3"></div>
+            <div id="runningtotal-hand4-TITLE"></div>
+            <div id="your-running-total-hand4"></div>
+        <div id ="dealer-total-TITLE"><h4>Dealer's total:</h4></div>
+            <div id ="dealer-running-total"></div>
+        <div id ="result"></div>
+        <div id = "dealer-turn-button"></div> 
+        <div id ="next-round"></div>
+        <br><br>
+        <hr>
+        <div id ="rules">Doubling down allowed on splits.  Up to 3 Non-ace splits allowed.  Re-splitting Aces allowed.  No hitting allowed on split Aces.</div>
+
+        <script src="newTestDoc.js"></script>
+    </body>
+    <footer>
+
+    </footer>
+</html>
